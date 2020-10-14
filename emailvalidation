@@ -4,7 +4,7 @@
    #adding @ part 
    #adding . part
    #adding optional part 
-   pat="^[0-9a-zA-Z]+([._+-][0-9a-zA-z]+)?@[0-9a-zA-Z]+.[a-zA-Z]{2,4}"
+   pat="^[0-9a-zA-Z]+([._+-][0-9a-zA-z]+)?@[0-9a-zA-Z]+.[a-zA-Z]{2,4}([.][a-zA-Z]{2})?$"
    read any
    if [[ $any =~ $pat ]];
    then
