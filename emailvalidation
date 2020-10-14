@@ -3,7 +3,8 @@
    echo "check the email pattern"
    #adding @ part 
    #adding . part
-   pat="^[0-9a-zA-Z]+@[0-9a-zA-Z]+.[a-zA-Z]{2,4}"
+   #adding optional part 
+   pat="^[0-9a-zA-Z]+([._+-][0-9a-zA-z]+)?@[0-9a-zA-Z]+.[a-zA-Z]{2,4}"
    read any
    if [[ $any =~ $pat ]];
    then
